@@ -57,6 +57,7 @@ console.log("Area of rectangle :- " + length*width);
 
  }
 swap_values("Virat","Anushka");
+swap_values(1000,2000);
 console.log("===================================================================================================");
 console.log("Q.6)Write FE to string?");
 
