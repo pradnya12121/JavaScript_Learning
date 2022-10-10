@@ -1,0 +1,79 @@
+
+console.log(" Q.1) Function Expression to get suare of the number Ex --->5 ,6 ,25,100?");
+
+var square=function(value1)
+{ 
+    console.log("square of given number:-" + value1*value1);
+
+
+}
+square(5);
+square(6);
+square(25);
+square(100);
+
+console.log("==================================================================================================");
+
+console.log("Q.2) Check and log type of function?") ;
+ 
+console.log("Type of functionis :- " + typeof square);
+
+
+console.log("==================================================================================================");
+
+console.log("Q.3)Write a FE to calculate the area of triangle ? given Base=45 ,height=34") ;
+
+var area=function(base,height)
+{ 
+    console.log("Area of Triangle is  :- " + 1/2*base*height);
+    return "result"
+
+}
+var result=area(45 ,34);
+console.log(result);
+console.log("==================================================================================================");
+console.log("Q.4)Write a FE to calculate the area of rectangle ? given length=499 ,width=917") ;
+
+ var rectangle=function(length,width)
+ {
+console.log("Area of rectangle :- " + length*width);
+ }
+ rectangle(499,917);
+
+ console.log("==================================================================================================");
+
+ console.log("Q.5)Write a FE to Swaping?");
+
+ var swap_values=function(argu1, argu2)
+ { 
+    console.log("Before Swaping value is ");
+    console.log(argu1 ,argu2);
+    console.log("After Swaping value is");
+    temp = argu1;
+    argu1=argu2;
+    argu2=temp;
+    console.log(argu1,temp);
+    
+
+ }
+swap_values("Virat","Anushka");
+console.log("===================================================================================================");
+console.log("Q.6)Write FE to string?");
+
+
+    var str="JavaScript the most popular language";
+      var len=str.length;
+      console.log("Total character in string  :- "  +  len);
+
+      var ind=str.indexOf('S');
+      console.log("Index of character 'S' :-  " + ind);
+
+      var ind1=str.indexOf("lang");
+      console.log("Index of string 'lang' :- " + ind1 );
+
+      var char=str.charAt(str.length-1);
+      console.log("Last character :- " + char);
+
+      
+      var char=str.charAt(str.length-3);
+      console.log(" 3rd Last character :- " + char);
