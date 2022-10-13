@@ -62,7 +62,7 @@ function display(str)
 {
     
    
-if(str=="Java")
+if(str.startsWith("Java"))
 {
    console.log(`String start with "Java"`);
 }
@@ -71,7 +71,7 @@ else
     console.log(`String  Not start with "Java"`);
 }
 }
-display("JavaScript Language");
-
-
+display("JavaScript");
+    
+   
 console.log("======================================================================================================================");
