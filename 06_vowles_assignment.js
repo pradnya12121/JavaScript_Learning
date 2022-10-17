@@ -97,7 +97,7 @@ function evenPositionedCha(arg)
     for (let index = 0; index < stm.length; index++) 
 
     {
-        if(index%2==0 && stt!=" ")
+        if(index%2==0 && index!=" ")
         {
             
           store = store +stm.charAt(index)

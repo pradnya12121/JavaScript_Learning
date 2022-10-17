@@ -1,10 +1,10 @@
 function reverseString(arg)
 {
    var rev =arg.length-1;
-   var sto=" ";
+  var sto=" ";
    for (let index = rev; index >=0; index--) 
    {
-    sto=sto + arg.charAt(index)
+ sto=sto + arg.charAt(index)
     
    }
    console.log(sto);
