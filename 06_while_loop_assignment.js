@@ -44,7 +44,7 @@ console.log("===================================================================
  console.log("5. WAP to print table of 5 like --->5 10 15");
  var count=5;
  var rmt= " 5";
- while (count<50) {
+ while (count<=50) {
     count=count+5;
     rmt=rmt + " " +count;
     
