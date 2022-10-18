@@ -16,9 +16,10 @@ for (let index = 0; index <str.length; index++) {
      
        
     }
-    console.log(count);
+   
     
 }
+console.log(`total no of vowels is :${count}`);
 
 console.log("==================================================================================");
 console.log(`2. Write a function to count vowels from the given string. EX -->" I Love JavaScript"`)
@@ -45,7 +46,8 @@ function display()
         }
        }
        
-       console.log(count);
+       console.log(`total count of vowels is :${count}`);
+       
 }
 display();
 console.log("==========================================================================================");
@@ -58,9 +60,11 @@ var addtion=function()
   {
     
     x=x+index;
-    console.log(x);
+    
 
-}}
+}
+console.log(` Sum of all number from 1 to 10 is :${x}`);
+}
 addtion()
 console.log("===========================================================================================");
 console.log(`4. Write function to get the sum of square number from 1 to 5`);
@@ -74,10 +78,11 @@ function square()
 for (let index = 1; index <=5; index++)
  {
 var sqr=index*index;
-var sum=sum+(index*index);
+var sum=sum+sqr;
     
-    console.log(sum);
+   
 }
+console.log(`sum of square number from 1 to 5 is : ${sum}`);
 }
 square()
 console.log("===========================================================================================");
@@ -88,24 +93,24 @@ function evenPositionedCha(arg)
 {  
     
     // var string="Hard work always pays back";
-    var stm=arg.toLowerCase();
+    // var stm=arg.toLowerCase();
     // var string2="Soon I will be Angular IT Champ";
     
-    var stt=stm.charAt(0);
-    var store= " ";
+   
+  var result= " ";
     
-    for (let index = 0; index < stm.length; index++) 
+    for (let index = 0; index < arg.length; index++) 
 
-    {
-        if(index%2==0 && index!=" ")
+    { var stt=arg.charAt(index);
+        if(index%2==0 && stt!=" ")
         {
-            
-          store = store +stm.charAt(index)
+            result=result +stt
+       
         }
     }
+    console.log(result);
 
-
-    console.log(store);
+    
 }
   evenPositionedCha("Hard work always pays back");
   console.log("=============================================================================")
