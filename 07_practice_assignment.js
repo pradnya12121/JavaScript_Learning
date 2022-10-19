@@ -28,11 +28,11 @@ function gradeSystem(score) {
    {
     console.log("invalid input")
    }
-   else
+   else if(score <0 || score>=100 || score ==" " || score == null || score == undefined || typeof score=='string')
    {
     console.log("invalid input")
    }
-
+  
 
     }
 
