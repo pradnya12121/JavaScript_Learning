@@ -1,6 +1,6 @@
 function gradeSystem(score) {
     
-    if (score >=0 && score <35){
+    if (score >=0 && score <35 && score != +""  && score !==null){
         console.log("You are Failed")
   }
   
