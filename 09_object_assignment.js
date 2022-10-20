@@ -52,6 +52,7 @@ console.log("===================================================================
 console.log("Add new Certificate in nested Object");
 teacher.degree.certificate.certificateName5="Advance Computing";
 console.log(teacher.degree.certificate);
+console.table(teacher.degree.certificate);
 
 
 
