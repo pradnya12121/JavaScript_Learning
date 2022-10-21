@@ -15,7 +15,10 @@ let objectSachin = {
     }
     
 
+
 }
+   let isAvailable=age in objectSachin;
+   console.log(`${isAvailable}`);
 
 console.log(Object.entries(objectSachin))
 console.log(Object.keys(objectSachin))
