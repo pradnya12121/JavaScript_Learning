@@ -20,3 +20,7 @@ console.log(sachin);
 console.log(rohit);
 // console.log(s1 instanceof Student);
 console.log(sachin instanceof Person);
+
+console.log("=================================")
+
+
