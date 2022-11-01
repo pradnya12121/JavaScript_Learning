@@ -22,7 +22,8 @@ const array =[axis_bank ,sbi_bank,icic_bank,kotak_bank,hdfc_bank,panjab_bank];
 
 for (let index = 0; index < array.length; index++) {
     const element = array[index];
-     console.log(`${element.bank_name} : ${element.location}`)
+     console.log(`${element.bank_name
+    } : ${element.location}`)
 }
 
 console.log("========================================================================================");
