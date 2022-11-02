@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Session storage</title>
+</head>
+<body>
+    <h3>
+        Understanding session storage:- use getItem();
+
+    </h3>
+<script>
+    window.sessionStorage.setItem("Kashi","Pandharpur");
+    window.sessionStorage.setItem("Pradnya","Sangola");
+    window.sessionStorage.setItem("Mohit","rajapur");
+    window.sessionStorage.setItem("Pranya","Pune");
+    // window.sessionStorage.removeItem("kashi");
+   var x= window.sessionStorage.getItem("Pradnya");
+   
+   var y=window.sessionStorage.length
+   document.write(`using getItem() retrive value also use Length is: ${y}  , Retrive Value: ${x}`);
+//    document.writeln("");
+//    document.writeln("")
+//    document.write(x)
+    // window.sessionStorage.length
+</script>
+</body>
+</html>
