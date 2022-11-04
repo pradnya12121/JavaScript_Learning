@@ -17,8 +17,8 @@ let objectSachin = {
 
 
 }
-   let isAvailable=age in objectSachin;
-   console.log(`${isAvailable}`);
+  //  let isAvailable=age in objectSachin;
+  //  console.log(`${isAvailable}`);
 
 console.log(Object.entries(objectSachin))
 console.log(Object.keys(objectSachin))
@@ -40,3 +40,6 @@ objectSachin.fullName="Sachin Ramesh Tendulkar";
 delete objectSachin.age;
 console.log(objectSachin.address.city);
 console.table(objectSachin);
+let mnp=Object.keys(objectSachin);
+console.log(mnp)
+
