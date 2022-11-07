@@ -87,7 +87,7 @@ class Employee{
 // avg= (sum1/3);
 // console.log(` Average Salary: ${avg}`);
 let new_array_emps9=[]
-array_emps.forEach((employee)=>{
+array_emps.filter((employee)=>{
     if(employee.emp_depth=="IT"){
    new_array_emps9.push(employee.emp_salary)
     }
