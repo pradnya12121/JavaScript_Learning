@@ -54,3 +54,17 @@ class Employee{
     map_employees.forEach((key,value)=>{
      console.log(`${emp_mahi.emp_id} ==>  Name:  ${emp_mahi.emp_name} , Dept : ${33,emp_mahi.emp_depth} , Company: ${33,emp_mahi.emp_company} , Salary: ${33,emp_mahi.emp_salary}`)
    })
+
+   console.log("==============================================================================================================")
+
+   let map_employees1= new Map();
+ map_employees1.set(22,emp_anil);
+ map_employees1.set(33,emp_radha)
+ map_employees1.set(55,emp_rishi)
+ map_employees1.set(66,emp_sonali)
+ map_employees1.set(77,emp_monika)
+ map_employees1.set(88,emp_vinay)
+ map_employees1.set(99,emp_mahi);
+ map_employees1.forEach((key,values)=>{
+     console.log(`${values}===>`,key);
+ })

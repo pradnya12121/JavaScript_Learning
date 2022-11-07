@@ -71,19 +71,42 @@ class Employee{
 
       console.log("============================================================================================================");
       console.log(`6. Find the average salary of "IT" department `)
-       let sum1 =0;
-    
+    //    let sum1 =0;
+       count=0;
       const new_array_emps5= array_emps.filter((employee,index)=>{
      if(employee.emp_depth=="IT"){
-        sum1= sum1+employee.emp_salary
-         console.log(`Total Salary:${sum1}`)
+        // sum1= sum1+employee.emp_salary
+        //  console.log(`Total Salary:${sum1}`)
+        count=count + employee.emp_salary
     
     }
     
 });
-var avg;
-avg= (sum1/3);
-console.log(` Average Salary: ${avg}`);
+ console.log(`${count}`)
+// var avg;
+// avg= (sum1/3);
+// console.log(` Average Salary: ${avg}`);
+let new_array_emps9=[]
+array_emps.forEach((employee)=>{
+    if(employee.emp_depth=="IT"){
+   new_array_emps9.push(employee.emp_salary)
+    }
+});
+console.log(new_array_emps9);
+ let len=new_array_emps9.length;
+ console.log(len);
+
+let sum3=new_array_emps9.reduce((runningTotal,value,index)=>{
+    runningTotal= runningTotal + value;
+    
+        avg= runningTotal/len
+    return runningTotal;
+})
+console.log(`Average salary of IT department :${avg} `)
+
+
+
+
 
 
 

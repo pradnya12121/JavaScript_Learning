@@ -29,10 +29,48 @@ class Employee{
 
  console.log("=======================================================================================================");
  console.log(`2. Sort the array_employees in ascending order of employee department & log on id ,dept, and company`)
+array_employees.sort(function(value1,value2){
+if(value1.emp_depth > value2.emp_depth){
+     return 1;
+}  
+if(value1.emp_depth < value2.emp_depth) 
+{
+     return -1
+} 
+})
 
- let sortted_array=array_employees.sort((ob1,ob2) =>{
-  ob1.emp_depth > ob2.emp_depth ? 1 : -1;
- })
- sortted_array.forEach((employee)=>{
-      console.log(`Employee Dept : ${employee.emp_depth}`)
- })
+array_employees.forEach((employee) => {     
+     console.log(`Empolyee ID: ${employee.emp_id} Employee Name: ${employee.emp_name} Employee Department: ${employee.emp_depth} `)
+   });
+
+   console.log("==============================================================================================================");
+   console.log(`3. Sort the array_employees in descending order of employees salary and log on Names,salary & company`)
+   array_employees.sort(function(value1,value2){
+     if(value1.emp_salary > value2.emp_salary){
+          return -1;
+     }  
+     if(value1.emp_salary <value2.emp_salary) 
+     {
+          return 1
+     } 
+     })
+     
+     array_employees.forEach((employee) => {     
+          console.log(` Employee Name: ${employee.emp_name} Employee Salary: ${employee.emp_salary} Company Name:${employee.emp_company} `)
+        });
+     console.log("==============================================================================================");
+     console.log(`4.Sort the employee array in ascending order of company name and log company, id,Name, Salary,depth`);
+
+     array_employees.sort(function(value1,value2){
+          if(value1.emp_company > value2.emp_company){
+               return 1;
+          }  
+          if(value1.emp_company < value2.emp_company) 
+          {
+               return -1
+          } 
+          })
+          
+          array_employees.forEach((employee) => {     
+               console.log(`Company Name:${employee.emp_company}  Empolyee ID: ${employee.emp_id} Employee Name: ${employee.emp_name} Employee Department: ${employee.emp_depth} `)
+             });
