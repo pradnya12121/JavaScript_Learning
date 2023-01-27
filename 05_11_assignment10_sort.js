@@ -74,3 +74,7 @@ array_employees.forEach((employee) => {
           array_employees.forEach((employee) => {     
                console.log(`Company Name:${employee.emp_company}  Empolyee ID: ${employee.emp_id} Employee Name: ${employee.emp_name} Employee Department: ${employee.emp_depth} `)
              });
+
+             
+
+             

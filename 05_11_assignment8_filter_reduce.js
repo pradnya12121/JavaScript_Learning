@@ -112,6 +112,7 @@ console.log(`Average salary of IT department :${avg} `)
 
 
 
+
     
     //   const  new_array_emps7= new_array_emps5.reduce()
       
